@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+main(){
+	char *arrp[100] ;//指针数组:就是由指针组成的数组
+	char *p="asgsfgsfgdfgrhmkywfbgfkukwfbsf";
+	char *rp=p;
+
+	int i=0;
+	while(*p!='\0'){
+		arrp[i++]=p++;
+		if(i%2){
+			printf("%c\n",*arrp[i-1]);
+		}
+	}
+	printf("%d\n",p);
+	printf("%d\n",rp);
+}
